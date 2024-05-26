@@ -13,3 +13,7 @@
 body {
   background-color: var(--color-blackprimary);
 }
+
+.bg-blur-movil {
+  background-image: url(../../public/images/bg-blur-movil.png);
+}
