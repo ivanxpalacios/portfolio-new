@@ -37,7 +37,7 @@ export default function Sidebar() {
     {
       icon: <svg width="36" height="36" viewBox="0 0 36 36" fill="inherit" xmlns="http://www.w3.org/2000/svg">
               <path d="M27.832 8.16797H8.16829C6.81079 8.16797 5.71033 9.26844 5.71033 10.6259V25.3737C5.71033 26.7312 6.81079 27.8317 8.16829 27.8317H27.832C29.1895 27.8317 30.2899 26.7312 30.2899 25.3737V10.6259C30.2899 9.26844 29.1895 8.16797 27.832 8.16797Z" fill="inherit"/>
-              <path d="M32.2913 12.6572L25.8818 15.2488L19.4722 17.8403C19.031 18.0162 18.5209 18.1095 18.0002 18.1095C17.4796 18.1095 16.9694 18.0162 16.5282 17.8403L3.70911 12.6572" stroke="#161513" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M32.2913 12.6572L25.8818 15.2488L19.4722 17.8403C19.031 18.0162 18.5209 18.1095 18.0002 18.1095C17.4796 18.1095 16.9694 18.0162 16.5282 17.8403L3.70911 12.6572" stroke="#161513" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>,
       link: "mailto:ipm_98_@hotmail.com"
     },
@@ -64,6 +64,7 @@ export default function Sidebar() {
             width={80}
             height={200}
             priority
+            className="w-[80px] h-auto"
           />
 
           {/* Botón X de cerrar */}
@@ -156,6 +157,7 @@ export default function Sidebar() {
             alt="menu"
             width={30}
             height={30}
+            className="w-[30px] h-auto"
           />
         </button>
 

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import CardsWhatIDo from "./components/CardsWhatIDo";
 
 export default function Home() {
   return (
@@ -45,6 +46,7 @@ export default function Home() {
             className="w-[75%] h-auto object-cover"
             width={300}
             height={600}
+            priority
           />
         </div>
 
@@ -53,6 +55,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Sección About me */}
       <section className="px-5 mt-14">
         <h1 className="text-white text-[32px] font-bold leading-[38px] text-center">
           <span className="text-primary">/</span>About me
@@ -66,6 +69,7 @@ export default function Home() {
           height={600}
         />
 
+        {/* What I do */}
         <div>
           <h2
             className="text-white text-[24px] mt-14"
@@ -77,9 +81,24 @@ export default function Home() {
             Currently working as the <span className="font-[600]">Front-End Development Team Lead</span> for the company I work for, creating the interfaces that thousands of clients visit in the e-commerce projects in which I participate while coordinating the activities of different developers, in addition to the applications and hiring of new members for my team.
           </p>
 
+          <div className="mt-14">
+            <CardsWhatIDo />
+          </div>
+
         </div>
 
+        <div>
+          <h2
+            className="text-white text-[24px] mt-14"
+          >
+            <span className="text-primary font-bold">#</span>Experience
+          </h2>
 
+          <p className="mt-6 text-white leading-[22px] font-[300] border-l border-primary px-6">
+            I've worked in UI design and front-end development, so I can understand designs well and builds effective communication between team members.
+          </p>
+
+        </div>
       </section>
     </main>
   );

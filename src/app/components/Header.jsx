@@ -13,6 +13,7 @@ export default function Header() {
             width={200}
             height={2000}
             priority
+            className="w-[200] h-auto"
           />
         </button>
 
