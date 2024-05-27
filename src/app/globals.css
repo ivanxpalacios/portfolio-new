@@ -16,4 +16,7 @@ body {
 
 .bg-blur-movil {
   background-image: url(../../public/images/bg-blur-movil.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }

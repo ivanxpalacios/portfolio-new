@@ -1,5 +1,7 @@
 import Image from "next/image";
 import CardsWhatIDo from "./components/CardsWhatIDo";
+import ExperienceDisclosure from "./components/ExperienceDisclosure";
+import { experiencia } from "./data/experiencia";
 
 export default function Home() {
   return (
@@ -87,9 +89,9 @@ export default function Home() {
 
         </div>
 
-        <div>
+        <div className="mt-14">
           <h2
-            className="text-white text-[24px] mt-14"
+            className="text-white text-[24px]"
           >
             <span className="text-primary font-bold">#</span>Experience
           </h2>
@@ -97,6 +99,15 @@ export default function Home() {
           <p className="mt-6 text-white leading-[22px] font-[300] border-l border-primary px-6">
             I've worked in UI design and front-end development, so I can understand designs well and builds effective communication between team members.
           </p>
+
+          <div>
+            {experiencia.map((exp, index) => (
+              <ExperienceDisclosure
+                key={index}
+                exp={exp}
+              />
+            ))}
+          </div>
 
         </div>
       </section>
