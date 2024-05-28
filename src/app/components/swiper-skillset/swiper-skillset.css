@@ -1,0 +1,21 @@
+.bg_blur_skills {
+  background-image: url(../../../../public/images/bg-blur-skills-movil.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 2;
+}
+
+.swiper-skillset .swiper-button-prev,
+.swiper-skillset .swiper-button-next {
+  color: var(--color-primary);
+  background-color: #2121214D;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.swiper-skillset .swiper-button-prev::after,
+.swiper-skillset .swiper-button-next::after {
+  font-size: 1.2rem;
+}

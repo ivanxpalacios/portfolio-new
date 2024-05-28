@@ -1,7 +1,9 @@
+"use client";
 import Image from "next/image";
 import CardsWhatIDo from "./components/CardsWhatIDo";
 import ExperienceDisclosure from "./components/ExperienceDisclosure";
 import { experiencia } from "./data/experiencia";
+import SwiperSkillset from "./components/swiper-skillset/SwiperSkillset";
 
 export default function Home() {
   return (
@@ -14,11 +16,11 @@ export default function Home() {
             Hi, I am <br /> Iván Palacios
           </h1>
 
-          <h5
+          <h2
             className="mt-6 text-[#828282] font-[600] text-[18px]"
           >
             Frontend Engineer
-          </h5>
+          </h2>
 
           <p className="mt-2 text-white font-[200]">
             Building pixel-perfect, engaging and accessible frontend products with best user experiences.
@@ -58,7 +60,7 @@ export default function Home() {
       </section>
 
       {/* Sección About me */}
-      <section className="px-5 mt-14">
+      <section className="px-5 mt-20">
         <h1 className="text-white text-[32px] font-bold leading-[38px] text-center">
           <span className="text-primary">/</span>About me
         </h1>
@@ -96,7 +98,7 @@ export default function Home() {
             <span className="text-primary font-bold">#</span>Experience
           </h2>
 
-          <p className="mt-6 text-white leading-[22px] font-[300] border-l border-primary px-6">
+          <p className="mt-6 mb-2 text-white leading-[22px] font-[300] border-l border-primary px-6">
             I've worked in UI design and front-end development, so I can understand designs well and builds effective communication between team members.
           </p>
 
@@ -113,11 +115,15 @@ export default function Home() {
       </section>
 
       {/* Sección My Skillset */}
-      <section className="px-5 mt-14">
+      <section className="px-5 mt-20">
         <h1 className="text-white text-[32px] font-bold leading-[38px] text-center">
           <span className="text-primary">/</span>My <span className="text-primary">Skillset</span>
         </h1>
-        </section>
+
+        <div className="py-14">
+          <SwiperSkillset />
+        </div>
+      </section>
     </main>
   );
 }

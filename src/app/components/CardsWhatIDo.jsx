@@ -38,6 +38,7 @@ export default function CardsWhatIDo() {
             background: "linear-gradient(231.89deg, #333333 -12.98%, #161513 29.62%, #161513 65.03%, #333333 97.36%"
           }}
           className="border border-primary rounded-[20px] overflow-hidden"
+          key={index}
         >
 
           <div className="p-5">
