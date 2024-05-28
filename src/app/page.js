@@ -111,6 +111,13 @@ export default function Home() {
 
         </div>
       </section>
+
+      {/* Sección My Skillset */}
+      <section className="px-5 mt-14">
+        <h1 className="text-white text-[32px] font-bold leading-[38px] text-center">
+          <span className="text-primary">/</span>My <span className="text-primary">Skillset</span>
+        </h1>
+        </section>
     </main>
   );
 }

@@ -39,7 +39,7 @@ export default function ExperienceDisclosure({
       >
         {description.map((desc, index) => (
           <li key={index}>
-            <p className="text-[14px]">
+            <p>
               {desc}
             </p>
           </li>
