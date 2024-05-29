@@ -4,6 +4,7 @@ import CardsWhatIDo from "./components/CardsWhatIDo";
 import ExperienceDisclosure from "./components/ExperienceDisclosure";
 import { experiencia } from "./data/experiencia";
 import SwiperSkillset from "./components/swiper-skillset/SwiperSkillset";
+import SwiperProjectsCards from "./components/swiper-projects-cards/SwiperProjectsCards";
 
 export default function Home() {
   return (
@@ -120,9 +121,33 @@ export default function Home() {
           <span className="text-primary">/</span>My <span className="text-primary">Skillset</span>
         </h1>
 
-        <div className="py-14">
+        <div className="mt-14">
           <SwiperSkillset />
         </div>
+      </section>
+
+      {/* Sección Work */}
+      <section className="px-5 mt-20">
+        <h1 className="text-white text-[32px] font-bold leading-[38px] text-center">
+          <span className="text-primary">/</span>Work
+        </h1>
+
+        <div className="mt-10">
+          <h2
+            className="text-white text-[28px] leading-[34px]"
+          >
+            <span className="text-primary font-bold">#</span>Look at my <br /> <span className="text-primary">projects</span>
+          </h2>
+
+          <p className="mt-6 text-white leading-[22px] font-[300] border-l border-primary px-6">
+            I am part of the process of creating and maintaining multiple e-commerce projects such as the ones shown below:
+          </p>
+        </div>
+
+        <div className="mt-10">
+          <SwiperProjectsCards />
+        </div>
+
       </section>
     </main>
   );

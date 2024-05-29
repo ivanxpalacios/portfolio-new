@@ -22,7 +22,7 @@ export default function SwiperSkillset() {
           const { icon, name, description } = skill;
 
           return (
-            <SwiperSlide className="bg_blur_skills">
+            <SwiperSlide className="bg_blur_skills" key={index}>
               <div className='relative border border-[#535353] rounded-[20px] w-[270px] mx-auto aspect-square'>
                 <Image
                   src={icon}

@@ -35,7 +35,7 @@ export default function ExperienceDisclosure({
       </button>
 
       <ul
-        className={`${showDisclosure ? 'max-h-0' : 'max-h-[300px] mt-6'} overflow-hidden transition-all list-disc flex flex-col gap-2 px-5 leading-[22px] font-[300] text-white`}
+        className={`${!showDisclosure ? 'max-h-0' : 'max-h-[300px] mt-6'} overflow-hidden transition-all list-disc flex flex-col gap-2 px-5 leading-[22px] font-[300] text-white`}
       >
         {description.map((desc, index) => (
           <li key={index}>

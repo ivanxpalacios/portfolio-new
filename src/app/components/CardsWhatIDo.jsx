@@ -20,7 +20,7 @@ export default function CardsWhatIDo() {
             </svg>,
       title: "Testing",
       description: "I conduct web testing to ensure optimal functionality, performance, and user experience.",
-      img: "/images/vanyplas-slides-laptop.jpg"
+      img: "/images/proyectos/vanyplas/vanyplas-main.jpg"
     },
     {
       icon: <Image src="/images/ux-ui-svg.svg" width={40} height={40} className="object-cover" alt="ux-ui icon" />,
