@@ -1,0 +1,10 @@
+.swiper-projects-cards .swiper-pagination {
+  position: static!important;
+  margin-top: 16px;
+}
+
+.swiper-projects-cards .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: #fff;
+}

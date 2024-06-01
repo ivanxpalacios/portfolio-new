@@ -148,6 +148,10 @@ export default function Home() {
           <SwiperProjectsCards />
         </div>
 
+        <div className="mt-20">
+
+        </div>
+
       </section>
     </main>
   );

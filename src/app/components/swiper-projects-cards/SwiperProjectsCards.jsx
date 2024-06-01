@@ -4,30 +4,31 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
-import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 // import required modules
-import { Navigation } from 'swiper/modules';
+import { Pagination } from 'swiper/modules';
 
 import { projects } from '@/app/data/projects';
-import Image from 'next/image';
+import ProjectCard from '../project-card/ProjectCard';
+
+import './swiper-projects-cards.css';
 
 export default function SwiperProjectsCards() {
   return (
     <>
-      <Swiper navigation={true} modules={[Navigation]} className='swiper-projects-cards'>
-        {projects.map((project, index) => {
-
-          const { name, briefDescription, longDescription, technologies, image, gallery, slug } = project;
-
-          return (
-            <SwiperSlide key={index} className="bg_blur_skills">
-              {name}
-
-            </SwiperSlide>
-          )
-
-        })}
+      <Swiper
+        pagination={true}
+        modules={[Pagination]}
+        className='swiper-projects-cards'
+        loop
+        spaceBetween={20}
+      >
+        {projects.map((project, index) => (
+            <SwiperSlide key={index} className="">
+              <ProjectCard project={project} />
+            </SwiperSlide> 
+        ))}
 
       </Swiper>
     </>

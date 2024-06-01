@@ -1,0 +1,26 @@
+.info_div {
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.card_div:hover {
+  .info_div {
+    opacity: 1;
+  }
+}
+
+.view_project_button,
+.view_project_button svg {
+  transition: all 0.2s;
+}
+
+.card_div:hover {
+  .view_project_button {
+    color: var(--color-primary);
+  }
+
+  .view_project_button svg {
+    fill: var(--color-primary);
+  }
+}
+
