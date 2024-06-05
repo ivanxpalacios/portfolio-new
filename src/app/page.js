@@ -5,6 +5,7 @@ import ExperienceDisclosure from "./components/ExperienceDisclosure";
 import { experiencia } from "./data/experiencia";
 import SwiperSkillset from "./components/swiper-skillset/SwiperSkillset";
 import SwiperProjectsCards from "./components/swiper-projects-cards/SwiperProjectsCards";
+import { contactIcons } from "./data/contactIcons";
 
 export default function Home() {
   return (
@@ -147,10 +148,73 @@ export default function Home() {
         <div className="mt-10">
           <SwiperProjectsCards />
         </div>
+      </section>
 
-        <div className="mt-20">
+      {/* Sección Contact */}
+      <section
+        className="px-5 mt-20"
+      >
+        {/* Div Let's work together */}
+        <div
+          className="border-b pb-2 w-fit flex items-end gap-4"
+        >
+          <h2
+            className="text-white text-[28px] leading-[34px]"
+          >
+            <span className="text-primary font-bold">#</span>Let's work<br /> <span className="text-primary">together</span>
+          </h2>
+
+          <svg width="22" height="22" viewBox="0 0 14 14" fill="#FFF" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.65428 13.9146L0.946533 13.2068L12.2388 1.91455H4.94653V0.914551H13.9465V9.91455H12.9465V2.6223L1.65428 13.9146Z" fill="#FFF"/>
+          </svg>
 
         </div>
+
+        <div className="flex justify-between items-center">
+          <p
+            className="mt-6 font-bold text-[18px] uppercase text-white"
+            >
+            Contact<span className="ms-1">me</span>
+          </p>
+
+          <ul className="mt-5 flex items-center justify-center gap-2">
+            {contactIcons.map((item, index) => (
+              <li key={index}>
+                <button
+                  className="fill-[#535353] hover:fill-white transition-[fill]"
+                  onClick={() => window.open(item.link)}
+                >
+                  {item.icon}
+                </button>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <Image
+          src={"/images/contact-cards.png"}
+          alt="contact-cards"
+          width={600}
+          height={600}
+          className="w-full h-auto mt-10"        
+        />
+
+        <div
+          className=""
+        >
+          <p className="text-[22px] mb-4 text-primary font-bold text-center"> 
+            SCAN ME!
+          </p>
+
+          <Image
+            src={"/images/qr-code.svg"}
+            alt="contact-cards"
+            width={600}
+            height={600}
+            className="w-full max-w-[250px] mx-auto h-auto"        
+          />
+        </div>
+
 
       </section>
     </main>
