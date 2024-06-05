@@ -152,7 +152,7 @@ export default function Home() {
 
       {/* Sección Contact */}
       <section
-        className="px-5 mt-20"
+        className="px-5 my-20"
       >
         {/* Div Let's work together */}
         <div
@@ -199,9 +199,7 @@ export default function Home() {
           className="w-full h-auto mt-10"        
         />
 
-        <div
-          className=""
-        >
+        <div>
           <p className="text-[22px] mb-4 text-primary font-bold text-center"> 
             SCAN ME!
           </p>
@@ -211,7 +209,7 @@ export default function Home() {
             alt="contact-cards"
             width={600}
             height={600}
-            className="w-full max-w-[250px] mx-auto h-auto"        
+            className="w-full max-w-[200px] mx-auto h-auto"        
           />
         </div>
 
