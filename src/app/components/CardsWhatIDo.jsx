@@ -30,14 +30,16 @@ export default function CardsWhatIDo() {
     },
   ]
 
+  // NO ME CONVENCEN LAS WHAT I DO, NECESITO MODIFICAR LA DESCRIPTION Y PUEDE QUE INCLUSO EL TÍTULO
+
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-6">
+    <div className="grid grid-cols-1 gap-5 md:gap-10 mt-6">
       {cards.map(({icon, title, description, img}, index) => (
         <div
           style={{
             background: "linear-gradient(231.89deg, #333333 -12.98%, #161513 29.62%, #161513 65.03%, #333333 97.36%"
           }}
-          className="border border-primary rounded-[20px] overflow-hidden"
+          className="border border-primary rounded-[20px] overflow-hidden max-w-[500px] mx-auto"
           key={index}
         >
 
@@ -55,12 +57,12 @@ export default function CardsWhatIDo() {
           </div>
 
           <div
-            className="bg-[#1C1C22]"
+            className="bg-[#1C1C22] overflow-hidden rounded-[15px] mt-5"
           >
             <Image
               src={img}
               alt="img"
-              className="w-full h-auto object-cover mt-5 rounded-[15px]"
+              className="w-full h-auto object-cover rounded-[15px]"
               width={300}
               height={300}
             />

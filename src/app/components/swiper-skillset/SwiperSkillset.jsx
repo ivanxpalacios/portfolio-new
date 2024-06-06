@@ -7,7 +7,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 
 // import required modules
-import { Navigation } from 'swiper/modules';
+import { Navigation, Autoplay } from 'swiper/modules';
 
 import './swiper-skillset.css';
 import { skillset } from '@/app/data/skillset';
@@ -16,13 +16,21 @@ import Image from 'next/image';
 export default function SwiperSkillset() {
   return (
     <>
-      <Swiper navigation={true} modules={[Navigation]} className='swiper-skillset'>
+      <Swiper
+        navigation={true}
+        modules={[Navigation, Autoplay]}
+        className='swiper-skillset'
+        autoplay={{
+          delay: 3500,
+          disableOnInteraction: false
+        }}
+      >
         {skillset.map((skill, index) => {
 
           const { icon, name, description } = skill;
 
           return (
-            <SwiperSlide className="bg_blur_skills" key={index}>
+            <SwiperSlide key={index}>
               <div className='relative border border-[#535353] rounded-[20px] w-[270px] mx-auto aspect-square'>
                 <Image
                   src={icon}

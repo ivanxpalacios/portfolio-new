@@ -23,6 +23,13 @@ export default function SwiperProjectsCards() {
         className='swiper-projects-cards'
         loop
         spaceBetween={20}
+        breakpoints={
+          {
+            768: {
+              slidesPerView: 2,
+            },
+          }
+        }
       >
         {projects.map((project, index) => (
             <SwiperSlide key={index} className="">

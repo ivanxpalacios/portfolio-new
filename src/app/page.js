@@ -49,7 +49,7 @@ export default function Home() {
           <Image
             src="/images/foto-personal.png"
             alt="foto-personal"
-            className="w-[75%] h-auto object-cover"
+            className="w-[75%] md:max-w-[400px] h-auto object-cover"
             width={300}
             height={600}
             priority
@@ -70,7 +70,7 @@ export default function Home() {
         <Image
           src="/images/svg-about-me.svg"
           alt="about-me"
-          className="w-full h-auto object-cover mt-6"
+          className="w-full max-w-[500px] mx-auto h-auto object-cover mt-6"
           width={300}
           height={600}
         />
@@ -117,7 +117,7 @@ export default function Home() {
       </section>
 
       {/* Sección My Skillset */}
-      <section className="px-5 mt-20">
+      <section className="px-5 mt-20 bg_blur_skills">
         <h1 className="text-white text-[36px] font-bold leading-[42px] text-center">
           <span className="text-primary">/</span>My <span className="text-primary">Skillset</span>
         </h1>

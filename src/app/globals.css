@@ -20,3 +20,17 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
+
+.bg_blur_skills {
+  background-image: url(../../public/images/bg-blur-skills-movil.png);
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 2;
+}
+
+@media (min-width: 768px){
+  .bg_blur_skills {
+    background-image: url(../../public/images/bg-blur-skills-desktop.png);
+  }
+}

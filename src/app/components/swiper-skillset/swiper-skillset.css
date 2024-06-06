@@ -1,11 +1,3 @@
-.bg_blur_skills {
-  background-image: url(../../../../public/images/bg-blur-skills-movil.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  z-index: 2;
-}
-
 .swiper-skillset .swiper-button-prev,
 .swiper-skillset .swiper-button-next {
   color: var(--color-primary);
