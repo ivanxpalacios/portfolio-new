@@ -21,12 +21,12 @@ export default function Footer() {
         Frontend Engineer
       </h2>
 
-      <Link
+      <a
         href="mailto:ivanpalaciosdev@gmail.com"
         className="text-[#ABB2BF] flex justify-center mt-2 text-[18px]"
       >
         ivanpalaciosdev@gmail.com
-      </Link>
+      </a>
 
     </footer>
   )

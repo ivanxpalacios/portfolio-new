@@ -63,7 +63,7 @@ export default function Home() {
 
       {/* Sección About me */}
       <section className="px-5 mt-20">
-        <h1 className="text-white text-[32px] font-bold leading-[38px] text-center">
+        <h1 className="text-white text-[36px] font-bold leading-[42px] text-center">
           <span className="text-primary">/</span>About me
         </h1>
 
@@ -78,7 +78,7 @@ export default function Home() {
         {/* What I do */}
         <div>
           <h2
-            className="text-white text-[24px] mt-14"
+            className="text-white text-[28px] mt-14"
           >
             <span className="text-primary font-bold">#</span>what I do
           </h2>
@@ -95,7 +95,7 @@ export default function Home() {
 
         <div className="mt-14">
           <h2
-            className="text-white text-[24px]"
+            className="text-white text-[28px]"
           >
             <span className="text-primary font-bold">#</span>Experience
           </h2>
@@ -118,7 +118,7 @@ export default function Home() {
 
       {/* Sección My Skillset */}
       <section className="px-5 mt-20">
-        <h1 className="text-white text-[32px] font-bold leading-[38px] text-center">
+        <h1 className="text-white text-[36px] font-bold leading-[42px] text-center">
           <span className="text-primary">/</span>My <span className="text-primary">Skillset</span>
         </h1>
 
@@ -129,7 +129,7 @@ export default function Home() {
 
       {/* Sección Work */}
       <section className="px-5 mt-20">
-        <h1 className="text-white text-[32px] font-bold leading-[38px] text-center">
+        <h1 className="text-white text-[36px] font-bold leading-[42px] text-center">
           <span className="text-primary">/</span>Work
         </h1>
 
