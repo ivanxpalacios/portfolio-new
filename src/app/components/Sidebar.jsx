@@ -4,9 +4,13 @@ import Image from "next/image"
 import { Box, SwipeableDrawer } from "@mui/material";
 import Link from "next/link";
 import { contactIcons } from "../data/contactIcons";
+import { useRouter, usePathname } from "next/navigation";
 
 export default function Sidebar() {
   const [state, setState] = useState(false);
+
+  const pathname = usePathname();
+  const router = useRouter();
 
   const toggleDrawer = (open) => (event) => {
     if (
@@ -19,6 +23,21 @@ export default function Sidebar() {
     setState(open);
   };
 
+  const handleClickLink = (name) => {
+    if (pathname === "/") {
+      const element = document.getElementById(name);
+      
+      window.scrollTo({
+        top: element.offsetTop - 100,
+        behavior: "smooth",
+      });
+
+    } else {
+      router.push(`/#${name}`);
+    }
+    setState(false);
+  }
+
   const List = () => (
     <Box
       sx={{ width: 300, height: "100%", backgroundColor: "#161513", padding: "20px", display: "flex", flexDirection: "column", justifyContent: "space-between"}}
@@ -26,14 +45,20 @@ export default function Sidebar() {
     >
       <div>
         <div className="flex items-center justify-between">
-          <Image
-            src="/images/logo-vertical-verde.svg"
-            alt="logo"
-            width={80}
-            height={200}
-            priority
-            className="w-[80px] h-auto"
-          />
+          <button
+            name="home"
+            onClick={(e) => handleClickLink(e.target.name)}
+          >
+            <Image
+              name="home"
+              src="/images/logo-vertical-verde.svg"
+              alt="logo"
+              width={80}
+              height={200}
+              priority
+              className="w-[80px] h-auto"
+            />
+          </button>
 
           {/* Botón X de cerrar */}
           <button
@@ -51,39 +76,43 @@ export default function Sidebar() {
         {/* Lista de Links */}
         <ul className="mt-20 flex flex-col gap-8">
           <li>
-            <Link
-              href="/"
-              className="text-[#ABB2BF] hover:text-white transition-colors font-[500] text-[32px]"
-            >
-              <span className="text-primary">#</span>home
-            </Link>
-          </li>
-
-          <li>
-            <Link
-              href="/"
+            <button
+              onClick={(e) => handleClickLink(e.target.name)}
+              name="about-me"
               className="text-[#ABB2BF] hover:text-white transition-colors font-[500] text-[32px]"
             >
               <span className="text-primary">#</span>about-me
-            </Link>
+            </button>
           </li>
 
           <li>
-            <Link
-              href="/"
+            <button
               className="text-[#ABB2BF] hover:text-white transition-colors font-[500] text-[32px]"
+              name="experience"
+              onClick={(e) => handleClickLink(e.target.name)}
             >
-              <span className="text-primary">#</span>work
-            </Link>
+              <span className="text-primary">#</span>experience
+            </button>
           </li>
 
           <li>
-            <Link
-              href="/"
+            <button
+              className="text-[#ABB2BF] hover:text-white transition-colors font-[500] text-[32px]"
+              name="projects"
+              onClick={(e) => handleClickLink(e.target.name)}
+            >
+              <span className="text-primary">#</span>projects
+            </button>
+          </li>
+
+          <li>
+            <button
+              name="contact"
+              onClick={(e) => handleClickLink(e.target.name)}
               className="text-[#ABB2BF] hover:text-white transition-colors font-[500] text-[32px]"
             >
               <span className="text-primary">#</span>contact
-            </Link>
+            </button>
           </li>
         </ul>
       </div>

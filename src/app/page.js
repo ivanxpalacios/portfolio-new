@@ -9,8 +9,8 @@ import { contactIcons } from "./data/contactIcons";
 
 export default function Home() {
   return (
-    <main className="mt-14">
-      <section>
+    <main>
+      <section  className="mt-14" id="home">
         <div
           className="px-5"
         >
@@ -62,7 +62,7 @@ export default function Home() {
       </section>
 
       {/* Sección About me */}
-      <section className="px-5 mt-20">
+      <section className="px-5 mt-20" id="about-me">
         <h1 className="text-white text-[36px] font-bold leading-[42px] text-center">
           <span className="text-primary">/</span>About me
         </h1>
@@ -90,47 +90,46 @@ export default function Home() {
           <div className="mt-14">
             <CardsWhatIDo />
           </div>
+        </div>
+      </section>
 
+      {/* Sección Experience */}
+      <section className="px-5 mt-20" id="experience">
+
+        <h1 className="text-white text-[36px] font-bold leading-[42px] text-center">
+          <span className="text-primary">/</span>Experience
+        </h1>
+
+        <p className="mt-6 mb-2 text-white leading-[22px] font-[300] border-l border-primary px-6">
+          I've worked in UI design and front-end development, so I can understand designs well and builds effective communication between team members.
+        </p>
+
+        <div>
+          {experiencia.map((exp, index) => (
+            <ExperienceDisclosure
+              key={index}
+              exp={exp}
+            />
+          ))}
         </div>
 
         <div className="mt-14">
           <h2
             className="text-white text-[28px]"
           >
-            <span className="text-primary font-bold">#</span>Experience
+            <span className="text-primary font-bold">#</span>My Skillset
           </h2>
 
-          <p className="mt-6 mb-2 text-white leading-[22px] font-[300] border-l border-primary px-6">
-            I've worked in UI design and front-end development, so I can understand designs well and builds effective communication between team members.
-          </p>
-
-          <div>
-            {experiencia.map((exp, index) => (
-              <ExperienceDisclosure
-                key={index}
-                exp={exp}
-              />
-            ))}
+          <div className="mt-14  bg_blur_skills">
+            <SwiperSkillset />
           </div>
-
         </div>
       </section>
 
-      {/* Sección My Skillset */}
-      <section className="px-5 mt-20 bg_blur_skills">
+      {/* Sección Projects */}
+      <section className="px-5 mt-20" id="projects">
         <h1 className="text-white text-[36px] font-bold leading-[42px] text-center">
-          <span className="text-primary">/</span>My <span className="text-primary">Skillset</span>
-        </h1>
-
-        <div className="mt-14">
-          <SwiperSkillset />
-        </div>
-      </section>
-
-      {/* Sección Work */}
-      <section className="px-5 mt-20">
-        <h1 className="text-white text-[36px] font-bold leading-[42px] text-center">
-          <span className="text-primary">/</span>Work
+          <span className="text-primary">/</span>Projects
         </h1>
 
         <div className="mt-10">
@@ -151,9 +150,7 @@ export default function Home() {
       </section>
 
       {/* Sección Contact */}
-      <section
-        className="px-5 my-20"
-      >
+      <section  className="px-5 my-20" id="contact">
         {/* Div Let's work together */}
         <div
           className="border-b pb-2 w-fit flex items-end gap-4"
@@ -192,7 +189,7 @@ export default function Home() {
         </div>
 
         <Image
-          src={"/images/contact-cards.png"}
+          src={"/images/contact-cards.webp"}
           alt="contact-cards"
           width={600}
           height={600}
@@ -206,7 +203,7 @@ export default function Home() {
 
           <Image
             src={"/images/qr-code.svg"}
-            alt="contact-cards"
+            alt="qr code"
             width={600}
             height={600}
             className="w-full max-w-[200px] mx-auto h-auto"        
