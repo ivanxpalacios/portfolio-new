@@ -105,17 +105,17 @@ export default function Home() {
       </section>
 
       {/* Sección Experience */}
-      <section className="px-5 mt-20 lg:mt-28" id="experience">
+      <section className="px-5 mt-20 lg:mt-28 max-w-[1300px] mx-auto" id="experience">
 
         <h1 className="text-white text-[36px] lg:text-[50px]  font-bold leading-[42px] text-center">
           <span className="text-primary">/</span>Experience
         </h1>
 
-        <p className="mt-6 mb-2 text-white leading-[22px] font-[300] border-l border-primary px-6">
-          I've worked in UI design and front-end development, so I can understand designs well and builds effective communication between team members.
+        <p className="mt-6 lg:mt-14 mb-2 text-white leading-[22px] lg:text-[20px] lg:leading-[26px]  font-[300] border-l border-primary px-6 lg:max-w-[752px] lg:mx-auto">
+          Specialized in converting designs into responsive interfaces with a strong focus on UX/UI, efficient debugging, and coordinating with fellow programmers. My experience ensures high-quality, user-friendly web experiences.
         </p>
 
-        <div>
+        <div className="lg:mt-8">
           {experiencia.map((exp, index) => (
             <ExperienceDisclosure
               key={index}

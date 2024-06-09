@@ -15,27 +15,37 @@ export default function ExperienceDisclosure({
         onClick={() => setShowDisclosure(!showDisclosure)}
         className="text-white w-full"
       >
-        <span className='flex justify-between items-center'>
+        <span className='flex justify-between items-center lg:hidden'>
           <span className='font-[300] text-[18px]'>{year}</span>
           <span className='font-[300] text-[18px]'>{company}</span>
         </span>
 
         <span className='mt-2 flex items-center justify-between'>
-          <span className='font-[500] text-[24px] text-start leading-[30px] max-w-[300px]'>
-            {position}
+          <span className="flex items-center justify-between lg:gap-10">
+            <span className='font-[300] text-[18px] hidden lg:block'>{year}</span>
+            <span className='font-[500] text-[24px] text-start leading-[30px] max-w-[300px] lg:max-w-[100%]'>
+              {position}
+            </span>
           </span>
 
-          <span className="text-white  bg-[#212121] w-[50px] h-[25px] flex justify-center items-center rounded-[10px]"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className={`${showDisclosure ? 'rotate-180 transform ' : ''} size-5`}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
-            </svg>
+
+          <span className="lg:flex gap-10">
+            <span className='font-[300] text-[18px] hidden lg:block'>{company}</span>
+
+            <span className="text-white  bg-[#212121] w-[50px] h-[25px] flex justify-center items-center rounded-[10px]"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className={`${showDisclosure ? 'rotate-180 transform ' : ''} size-5`}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+              </svg>
+            </span>
           </span>
+
+
         </span>
       </button>
 
       <ul
-        className={`${!showDisclosure ? 'max-h-0' : 'max-h-[300px] mt-6'} overflow-hidden transition-all list-disc flex flex-col gap-2 px-5 leading-[22px] font-[300] text-white`}
+        className={`${!showDisclosure ? 'max-h-0' : 'max-h-[300px] mt-6'} overflow-hidden transition-all duration-300 list-disc flex flex-col gap-2 px-5 leading-[22px] font-[300] text-white lg:max-w-[900px] lg:ml-[84px]`}
       >
         {description.map((desc, index) => (
           <li key={index}>
