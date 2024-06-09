@@ -18,7 +18,7 @@ export default function Header() {
   }
 
   return (
-    <header className="p-5 max-w-[1200px] mx-auto sticky top-0 bg-blackprimary z-[10]">
+    <header className="p-5 max-w-[1300px] mx-auto sticky top-0 bg-blackprimary z-[10]">
       <div className="flex items-center justify-between">
         <button
           onClick={handleClickLogo}

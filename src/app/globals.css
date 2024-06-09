@@ -21,6 +21,32 @@ body {
   background-position: center;
 }
 
+@media (min-width: 1024px){
+  .bg-blur-movil {
+    background: none;
+  }
+}
+
+@media (min-width: 1024px){
+  .banner-home-desktop {
+    background-image: url(../../public/images/banner-home-desktop.webp);    
+    background-repeat: no-repeat;
+    height: 450px;
+    background-size: contain;
+    background-position: 130% 50%;
+  }
+}
+
+@media (min-width: 1440px){
+  .banner-home-desktop {
+    background-image: url(../../public/images/banner-home-desktop.webp);    
+    background-repeat: no-repeat;
+    height: 550px;
+    background-size: contain;
+    background-position: 150% 50%;
+  }
+}
+
 .bg_blur_skills {
   background-image: url(../../public/images/bg-blur-skills-movil.png);
   background-size: 90%;

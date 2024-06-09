@@ -10,9 +10,9 @@ import { contactIcons } from "./data/contactIcons";
 export default function Home() {
   return (
     <main>
-      <section  className="mt-14" id="home">
+      <section  className="mt-14 lg:mt-0 lg:flex items-center justify-between banner-home-desktop max-w-[1300px] mx-auto" id="home">
         <div
-          className="px-5"
+          className="px-5 lg:max-w-[450px] xl:max-w-[500px]"
         >
           <h1 className="text-white text-[28px] lg:text-[50px] font-bold leading-[34px] lg:leading-[56px]">
             Hi, I am <br /> Iván Palacios
@@ -49,7 +49,7 @@ export default function Home() {
           <Image
             src="/images/foto-personal.png"
             alt="foto-personal"
-            className="w-[75%] md:max-w-[400px] h-auto object-cover"
+            className="w-[75%] md:max-w-[400px] h-auto object-cover lg:hidden"
             width={300}
             height={600}
             priority
