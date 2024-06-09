@@ -138,24 +138,25 @@ export default function Home() {
       </section>
 
       {/* Sección Projects */}
-      <section className="px-5 mt-20 lg:mt-28" id="projects">
-        <h1 className="text-white text-[36px] font-bold leading-[42px] text-center">
+      <section className="px-5 mt-20 lg:mt-28 max-w-[1300px] mx-auto" id="projects">
+        <h1 className="text-white text-[36px] lg:text-[50px] font-bold leading-[42px] text-center">
           <span className="text-primary">/</span>Projects
         </h1>
 
-        <div className="mt-10">
+        <div className="mt-10 lg:mt-14 lg:flex justify-between">
           <h2
-            className="text-white text-[28px] leading-[34px]"
+            className="text-white text-[28px] lg:text-[44px] leading-[34px] lg:leading-[50px]"
           >
             <span className="text-primary font-bold">#</span>Look at my <br /> <span className="text-primary">projects</span>
           </h2>
 
-          <p className="mt-6 text-white leading-[22px] font-[300] border-l border-primary px-6">
-            I am part of the process of creating and maintaining multiple e-commerce projects such as the ones shown below:
+          <p className="mt-6 text-white leading-[22px] lg:text-[20px] lg:leading-[26px] font-[300] border-l border-primary px-6 lg:max-w-[660px] lg:flex items-center">
+          I am part of the process of creating and maintaining multiple e-commerce projects such as the ones shown below:
           </p>
+
         </div>
 
-        <div className="mt-10">
+        <div className="mt-10 lg:mt-14">
           <SwiperProjectsCards />
         </div>
       </section>
