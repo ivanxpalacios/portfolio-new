@@ -126,7 +126,7 @@ export default function Home() {
 
         <div className="mt-14 lg:mt-20">
           <h2
-            className="text-white text-[28px]"
+            className="text-white text-[28px] lg:text-[44px]"
           >
             <span className="text-primary font-bold">#</span>My Skillset
           </h2>

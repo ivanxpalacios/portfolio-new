@@ -23,7 +23,7 @@ export default function ExperienceDisclosure({
         <span className='mt-2 flex items-center justify-between'>
           <span className="flex items-center justify-between lg:gap-10">
             <span className='font-[300] text-[18px] hidden lg:block'>{year}</span>
-            <span className='font-[500] text-[24px] text-start leading-[30px] max-w-[300px] lg:max-w-[100%]'>
+            <span className='font-[500] text-[24px] lg:text-[32px] text-start leading-[30px] max-w-[300px] lg:max-w-[100%]'>
               {position}
             </span>
           </span>
@@ -45,11 +45,11 @@ export default function ExperienceDisclosure({
       </button>
 
       <ul
-        className={`${!showDisclosure ? 'max-h-0' : 'max-h-[300px] mt-6'} overflow-hidden transition-all duration-300 list-disc flex flex-col gap-2 px-5 leading-[22px] font-[300] text-white lg:max-w-[900px] lg:ml-[84px]`}
+        className={`${!showDisclosure ? 'max-h-0' : 'max-h-[300px] mt-6'} overflow-hidden transition-all duration-300 list-disc flex flex-col gap-2 px-5 leading-[22px] lg:text-[20px] lg:leading-[26px] font-[300] text-white lg:max-w-[900px] lg:ml-[84px]`}
       >
         {description.map((desc, index) => (
           <li key={index}>
-            <p>
+            <p className="">
               {desc}
             </p>
           </li>
