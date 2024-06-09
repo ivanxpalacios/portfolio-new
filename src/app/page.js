@@ -12,31 +12,31 @@ export default function Home() {
     <main>
       <section  className="mt-14 lg:mt-0 lg:flex items-center justify-between banner-home-desktop max-w-[1300px] mx-auto" id="home">
         <div
-          className="px-5 lg:max-w-[450px] xl:max-w-[500px]"
+          className="px-5 lg:max-w-[470px] xl:max-w-[500px]"
         >
           <h1 className="text-white text-[28px] lg:text-[50px] font-bold leading-[34px] lg:leading-[56px]">
             Hi, I am <br /> Iván Palacios
           </h1>
 
           <h2
-            className="mt-6 text-[#828282] font-[600] text-[18px] lg:text-[22px]"
+            className="mt-6 text-[#828282] font-[600] text-[18px] lg:text-[26px]"
           >
             Frontend Engineer
           </h2>
 
-          <p className="mt-2 text-white font-[200] text-[18px]">
+          <p className="mt-2 text-white font-[200] text-[18px] lg:text-[20px]">
             Building pixel-perfect, engaging and accessible frontend products with best user experiences.
           </p>
 
           <div className="mt-6 flex items-center gap-6">
             <button
-              className="bg-primary h-10 rounded-[10px] w-full text-white text-[14px] font-[300]"
+              className="bg-primary h-10 rounded-[10px] w-full text-white text-[14px] lg:text-[18px] font-[300] lg:max-w-[190px]"
             >
               Contact Me
             </button>
 
             <button
-              className="bg-[#171717] border border-[#F2F2F2] h-10 rounded-[10px] text-[14px] w-full text-white font-[300]"
+              className="bg-[#171717] border border-[#F2F2F2] h-10 rounded-[10px] text-[14px] lg:text-[18px] w-full text-white font-[300] lg:max-w-[190px]"
             >
               Download Resume
             </button>
@@ -62,41 +62,52 @@ export default function Home() {
       </section>
 
       {/* Sección About me */}
-      <section className="px-5 mt-20" id="about-me">
-        <h1 className="text-white text-[36px] font-bold leading-[42px] text-center">
+      <section className="px-5 mt-20 lg:mt-28 max-w-[1300px] mx-auto" id="about-me">
+        <h1 className="text-white text-[36px] lg:text-[50px] font-bold leading-[42px] text-center">
           <span className="text-primary">/</span>About me
         </h1>
 
         <Image
           src="/images/svg-about-me.svg"
           alt="about-me"
-          className="w-full max-w-[500px] mx-auto h-auto object-cover mt-6"
+          className="w-full max-w-[500px] mx-auto h-auto object-cover mt-6 lg:hidden"
           width={300}
           height={600}
         />
 
+        <Image
+          src="/images/svg-about-me-desktop.svg"
+          alt="about-me"
+          className="w-full max-w-[750px] mx-auto h-auto object-cover mt-6 hidden lg:block"
+          width={600}
+          height={600}
+        />
+
         {/* What I do */}
-        <div>
-          <h2
-            className="text-white text-[28px] mt-14"
-          >
-            <span className="text-primary font-bold">#</span>what I do
-          </h2>
+        <div className="mt-14 lg:mt-20">
+          <div className="lg:flex justify-between items-start">
+            <h2
+              className="text-white text-[28px] lg:text-[44px]"
+            >
+              <span className="text-primary font-bold">#</span>what I do
+            </h2>
 
-          <p className="mt-6 text-white leading-[22px] font-[300] border-l border-primary px-6">
-            Currently working as the <span className="font-[600]">Front-End Development Team Lead</span> for the company I work for, creating the interfaces that thousands of clients visit in the e-commerce projects in which I participate while coordinating the activities of different developers, in addition to the applications and hiring of new members for my team.
-          </p>
+            <p className="mt-6 text-white leading-[22px] lg:text-[20px] lg:leading-[26px] font-[300] border-l border-primary px-6 lg:max-w-[660px]">
+              Currently working as the <span className="font-[600]">Front-End Development Team Lead</span> for the company I work for, creating the interfaces that thousands of clients visit in the e-commerce projects in which I participate while coordinating the activities of different developers, in addition to the applications and hiring of new members for my team.
+            </p>
 
-          <div className="mt-14">
+          </div>
+
+          <div className="mt-14 lg:mt-20">
             <CardsWhatIDo />
           </div>
         </div>
       </section>
 
       {/* Sección Experience */}
-      <section className="px-5 mt-20" id="experience">
+      <section className="px-5 mt-20 lg:mt-28" id="experience">
 
-        <h1 className="text-white text-[36px] font-bold leading-[42px] text-center">
+        <h1 className="text-white text-[36px] lg:text-[50px]  font-bold leading-[42px] text-center">
           <span className="text-primary">/</span>Experience
         </h1>
 
@@ -113,21 +124,21 @@ export default function Home() {
           ))}
         </div>
 
-        <div className="mt-14">
+        <div className="mt-14 lg:mt-20">
           <h2
             className="text-white text-[28px]"
           >
             <span className="text-primary font-bold">#</span>My Skillset
           </h2>
 
-          <div className="mt-14  bg_blur_skills">
+          <div className="mt-14 lg:mt-20  bg_blur_skills">
             <SwiperSkillset />
           </div>
         </div>
       </section>
 
       {/* Sección Projects */}
-      <section className="px-5 mt-20" id="projects">
+      <section className="px-5 mt-20 lg:mt-28" id="projects">
         <h1 className="text-white text-[36px] font-bold leading-[42px] text-center">
           <span className="text-primary">/</span>Projects
         </h1>
