@@ -5,7 +5,7 @@
   border-radius: 50%;
   width: 2.5rem;
   height: 2.5rem;
-  top: 150px;
+  top: 180px;
 }
 
 .swiper-skillset .swiper-button-prev {
@@ -19,4 +19,21 @@
 .swiper-skillset .swiper-button-prev::after,
 .swiper-skillset .swiper-button-next::after {
   font-size: 1.2rem;
+}
+
+@media (min-width: 1024px){
+  .swiper-skillset .swiper-slide {
+    opacity: 0.5;
+    scale: 0.7;
+  }
+
+  .swiper-skillset .swiper-slide-active {
+    opacity: 1;
+    scale: 1;
+  }
+
+  .swiper-skillset .swiper-button-prev,
+  .swiper-skillset .swiper-button-next {
+    top: 200px;
+  }
 }

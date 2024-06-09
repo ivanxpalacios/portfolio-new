@@ -131,7 +131,7 @@ export default function Home() {
             <span className="text-primary font-bold">#</span>My Skillset
           </h2>
 
-          <div className="mt-14 lg:mt-20  bg_blur_skills">
+          <div className="mt-4 lg:mt-10  bg_blur_skills">
             <SwiperSkillset />
           </div>
         </div>

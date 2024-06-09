@@ -58,5 +58,18 @@ body {
 @media (min-width: 768px){
   .bg_blur_skills {
     background-image: url(../../public/images/bg-blur-skills-desktop.png);
+    background-size: 80%;
+  }
+}
+
+@media (min-width: 1024px){
+  .bg_blur_skills {
+    background-size: 66%;
+  }
+}
+
+@media (min-width: 1440px){
+  .bg_blur_skills {
+    background-size: 50%;
   }
 }
