@@ -14,17 +14,17 @@ export default function Home() {
         <div
           className="px-5"
         >
-          <h1 className="text-white text-[28px] font-bold leading-[34px]">
+          <h1 className="text-white text-[28px] lg:text-[50px] font-bold leading-[34px] lg:leading-[56px]">
             Hi, I am <br /> Iván Palacios
           </h1>
 
           <h2
-            className="mt-6 text-[#828282] font-[600] text-[18px]"
+            className="mt-6 text-[#828282] font-[600] text-[18px] lg:text-[22px]"
           >
             Frontend Engineer
           </h2>
 
-          <p className="mt-2 text-white font-[200]">
+          <p className="mt-2 text-white font-[200] text-[18px]">
             Building pixel-perfect, engaging and accessible frontend products with best user experiences.
           </p>
 
