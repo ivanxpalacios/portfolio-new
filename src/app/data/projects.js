@@ -1,7 +1,7 @@
 export const projects = [
   {
     name: "B Life USA",
-    briefDescription: "E-commerce for the sale of health and wellness products.",
+    briefDescription: "E-commerce for the sale of health and wellness products in the US.",
     longDescription: "E-commerce for the sale of health and wellness products. The project was developed using React, NextJS, and TailwindCSS. The application consumes a REST API developed by the company to manage products, customers, and purchases.",
     technologies: ["react", "nextjs", "tailwindcss"],
     image: "/images/proyectos/blifeusa/blifeusa-main.webp",
@@ -14,7 +14,7 @@ export const projects = [
   },
   {
     name: "B Life Mayoreo",
-    briefDescription: "E-commerce for the sale of products for the home.",
+    briefDescription: "E-commerce project for the sale of supplements and wellness products to wholesalers",
     longDescription: "E-commerce for the sale of products for the home. The project was developed using React, NextJS, and TailwindCSS. The application consumes a REST API developed by the company to manage products, customers, and purchases.",
     technologies: ["react", "nextjs", "tailwindcss"],
     image: "/images/proyectos/blifemayoreo/blifemayoreo-main.webp",
@@ -27,7 +27,7 @@ export const projects = [
   },
   {
     name: "Vanyplas",
-    briefDescription: "E-commerce for the sale of plastic products.",
+    briefDescription: "E-commerce project for the sale of various household items to retailers and wholesalers based in Colombia.",
     longDescription: "E-commerce for the sale of plastic products. The project was developed using React, NextJS, and TailwindCSS. The application consumes a REST API developed by the company to manage products, customers, and purchases.",
     technologies: ["react", "nextjs", "tailwindcss"],
     image: "/images/proyectos/vanyplas/vanyplas-main.webp",

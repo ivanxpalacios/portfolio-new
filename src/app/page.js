@@ -93,7 +93,7 @@ export default function Home() {
             </h2>
 
             <p className="mt-6 text-white leading-[22px] lg:text-[20px] lg:leading-[26px] font-[300] border-l border-primary px-6 lg:max-w-[660px]">
-              Currently working as the <span className="font-[600]">Front-End Development Team Lead</span> for the company I work for, creating the interfaces that thousands of clients visit in the e-commerce projects in which I participate while coordinating the activities of different developers, in addition to the applications and hiring of new members for my team.
+              Currently working as the <span className="font-[600]">Front-End Development Team Lead</span>, I create interfaces for e-commerce projects visited by thousands of clients. I coordinate the activities of various developers and handle the application process and hiring of new team members.
             </p>
 
           </div>
@@ -162,65 +162,74 @@ export default function Home() {
       </section>
 
       {/* Sección Contact */}
-      <section  className="px-5 my-20" id="contact">
-        {/* Div Let's work together */}
-        <div
-          className="border-b pb-2 w-fit flex items-end gap-4"
-        >
-          <h2
-            className="text-white text-[28px] leading-[34px]"
-          >
-            <span className="text-primary font-bold">#</span>Let's work<br /> <span className="text-primary">together</span>
-          </h2>
-
-          <svg width="22" height="22" viewBox="0 0 14 14" fill="#FFF" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1.65428 13.9146L0.946533 13.2068L12.2388 1.91455H4.94653V0.914551H13.9465V9.91455H12.9465V2.6223L1.65428 13.9146Z" fill="#FFF"/>
-          </svg>
-
-        </div>
-
-        <div className="flex justify-between items-center">
-          <p
-            className="mt-6 font-bold text-[18px] uppercase text-white"
+      <section  className="px-5 my-20 lg:my-28 max-w-[1300px] mx-auto" id="contact">
+        <div className="xl:flex items-center justify-between">
+          <div>
+            {/* Div Let's work together */}
+            <div
+              className="border-b pb-2 w-fit flex items-end gap-4"
             >
-            Contact<span className="ms-1">me</span>
-          </p>
+              <h2
+                className="text-white text-[28px] lg:text-[44px] leading-[34px] lg:leading-[50px]"
+              >
+                <span className="text-primary font-bold">#</span>Let's work<br /> <span className="text-primary">together</span>
+              </h2>
 
-          <ul className="mt-5 flex items-center justify-center gap-2">
-            {contactIcons.map((item, index) => (
-              <li key={index}>
-                <button
-                  className="fill-[#535353] hover:fill-white transition-[fill]"
-                  onClick={() => window.open(item.link)}
+              <svg width="22" height="22" viewBox="0 0 14 14" fill="#FFF" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.65428 13.9146L0.946533 13.2068L12.2388 1.91455H4.94653V0.914551H13.9465V9.91455H12.9465V2.6223L1.65428 13.9146Z" fill="#FFF"/>
+              </svg>
+
+            </div>
+
+            <div className="flex justify-between items-center xl:flex-col xl:items-start">
+              <p
+                className="mt-6 font-bold text-[18px] lg:text-[24px] uppercase text-white"
                 >
-                  {item.icon}
-                </button>
-              </li>
-            ))}
-          </ul>
+                Contact<span className="ms-1">me</span>
+              </p>
+
+              <ul className="mt-5 flex items-center justify-center gap-2">
+                {contactIcons.map((item, index) => (
+                  <li key={index}>
+                    <button
+                      className="fill-[#535353] hover:fill-white transition-[fill]"
+                      onClick={() => window.open(item.link)}
+                    >
+                      {item.icon}
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+
+          <div className="xl:flex items-end justify-between">
+            <Image
+              src={"/images/contact-cards.webp"}
+              alt="contact-cards"
+              width={600}
+              height={600}
+              className="w-full h-auto mt-10 max-w-[500px] mx-auto"        
+            />
+
+            <div>
+              <p className="text-[22px] mb-4 text-primary font-bold text-center"> 
+                SCAN ME!
+              </p>
+
+              <Image
+                src={"/images/qr-code.svg"}
+                alt="qr code"
+                width={600}
+                height={600}
+                className="w-full max-w-[200px] mx-auto h-auto"        
+              />
+            </div>
+          </div>
         </div>
 
-        <Image
-          src={"/images/contact-cards.webp"}
-          alt="contact-cards"
-          width={600}
-          height={600}
-          className="w-full h-auto mt-10"        
-        />
 
-        <div>
-          <p className="text-[22px] mb-4 text-primary font-bold text-center"> 
-            SCAN ME!
-          </p>
-
-          <Image
-            src={"/images/qr-code.svg"}
-            alt="qr code"
-            width={600}
-            height={600}
-            className="w-full max-w-[200px] mx-auto h-auto"        
-          />
-        </div>
 
 
       </section>

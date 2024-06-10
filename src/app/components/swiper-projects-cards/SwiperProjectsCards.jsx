@@ -28,6 +28,9 @@ export default function SwiperProjectsCards() {
             768: {
               slidesPerView: 2,
             },
+            1440: {
+              slidesPerView: 3,
+            },
           }
         }
       >
