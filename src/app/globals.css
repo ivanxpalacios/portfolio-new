@@ -73,3 +73,22 @@ body {
     background-size: 50%;
   }
 }
+
+/* Animaciones */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeInUp {
+  opacity: 0;
+  animation: fadeInUp 0.7s ease-in-out;
+  animation-fill-mode: forwards;
+}
