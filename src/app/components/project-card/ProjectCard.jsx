@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./project-card.module.css";
+import { useRouter } from "next/navigation";
 
 export default function ProjectCard({
   project
@@ -7,9 +8,12 @@ export default function ProjectCard({
 
   const { name, briefDescription, longDescription, technologies, image, gallery, slug } = project;
 
+  const router = useRouter();
+
   return (
     <div 
       className={`${styles.card_div} cursor-pointer`}
+      onClick={() => router.push(`/projects/${slug}`)}
     >
       <div
         className="relative"
